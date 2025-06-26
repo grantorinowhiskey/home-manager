@@ -74,5 +74,11 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
-  programs.fish.enable = true;
+  programs.fish = {
+  	enable = true;
+  	shellAliases = {
+  		man = "batman";
+  		cat = "bat --paging=never";
+  	};
+  };
 }

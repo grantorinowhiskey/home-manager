@@ -74,6 +74,11 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
+  programs.eza = {
+    enable = true;
+    enableFishIntegration = true;
+  };
+
   programs.fish = {
   	enable = true;
   	interactiveShellInit = ''
@@ -82,6 +87,16 @@
   	shellAliases = {
   		man = "batman";
   		cat = "bat --paging=never";
+  	};
+  };
+
+  programs.mpv = {
+  	enable = true;
+  	config = {
+  		hwdec = "auto-safe";
+  		vo = "gpu";
+  		profile = "gpu-hq";
+  		save-position-on-quit = "true";
   	};
   };
 
@@ -100,4 +115,6 @@
   		theme = "default";
   	};
   };
+
+
 }

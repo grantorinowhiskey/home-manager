@@ -89,4 +89,14 @@
   	enable = true;
   	enableFishIntegration = true;
   };
+
+  programs.zellij = {
+  	enable = true;
+  	enableFishIntegration = true;
+  	settings = {
+  		default_shell = "fish";
+  		on_force_close = "detach";
+  		copy_command = "wl-copy";
+  	};
+  };
 }

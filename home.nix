@@ -87,6 +87,7 @@
   	shellAliases = {
   		man = "batman";
   		cat = "bat --paging=never";
+  		ls = "eza";
   	};
   };
 
@@ -98,6 +99,11 @@
   		profile = "gpu-hq";
   		save-position-on-quit = "true";
   	};
+  };
+
+  programs.nix-your-shell = {
+  	enable = true;
+  	enableFishIntegration = true;
   };
 
   programs.starship = {

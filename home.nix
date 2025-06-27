@@ -76,9 +76,17 @@
 
   programs.fish = {
   	enable = true;
+  	interactiveShellInit = ''
+  		set fish_greeting
+  	'';
   	shellAliases = {
   		man = "batman";
   		cat = "bat --paging=never";
   	};
+  };
+
+  programs.starship = {
+  	enable = true;
+  	enableFishIntegration = true;
   };
 }

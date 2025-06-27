@@ -92,7 +92,7 @@
 
   programs.zellij = {
   	enable = true;
-  	enableFishIntegration = true;
+  	enableFishIntegration = false; # annoying with terminals in IDE's and such
   	settings = {
   		default_shell = "fish";
   		on_force_close = "detach";

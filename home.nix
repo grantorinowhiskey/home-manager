@@ -68,7 +68,7 @@
   #  /etc/profiles/per-user/jt/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    # EDITOR = "emacs";
+    EDITOR = "micro";
   };
 
   # Let Home Manager install and manage itself.
@@ -102,6 +102,16 @@
   		cat = "bat --paging=never";
   		ls = "eza";
   	};
+  };
+
+  programs.micro = {
+    enable = true;
+    settings = {
+      colorscheme = "monokai";
+      lsp.ignoreMessages = "LS message1 to ignore|LS message 2 to ignore|...";
+      lsp.ignoreTriggerCharacters = "completion,signature";
+      lsp.server = "lsp, nixd";
+    };
   };
 
   programs.mpv = {

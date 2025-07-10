@@ -74,6 +74,19 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
+  # bat
+  programs.bat = {
+    enable = true;
+    extraPackages = with pkgs.bat-extras; [
+      batdiff
+      batman
+      batgrep
+      batpipe
+      batwatch
+      prettybat
+    ];
+  };
+
   programs.eza = {
     enable = true;
     enableFishIntegration = true;

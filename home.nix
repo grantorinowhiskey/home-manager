@@ -104,6 +104,10 @@
   	};
   };
 
+  programs.helix = {
+  	enable = true;
+  };
+
   programs.micro = {
     enable = true;
     settings = {

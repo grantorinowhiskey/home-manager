@@ -107,6 +107,9 @@
 
   programs.helix = {
   	enable = true;
+    settings = {
+      theme = "adwaita-dark";
+    };
   };
 
   programs.micro = {

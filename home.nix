@@ -101,6 +101,7 @@
   		man = "batman";
   		cat = "bat --paging=never";
   		ls = "eza";
+      hm = "home-manager";
   	};
   };
 

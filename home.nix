@@ -143,6 +143,11 @@
   	enableFishIntegration = true;
   };
 
+  programs.yazi = {
+    enable = true;
+    enableFishIntegration = true;
+  };
+
   programs.zellij = {
   	enable = true;
   	enableFishIntegration = false; # annoying with terminals in IDE's and such

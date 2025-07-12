@@ -150,10 +150,6 @@
   	enableFishIntegration = true;
   };
 
-  programs.nixvim = {
-  	enable = true;
-  };
-
   programs.starship = {
   	enable = true;
   	enableFishIntegration = true;

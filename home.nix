@@ -38,6 +38,7 @@
     aria2
     bottom
     curl
+    docker-compose-language-service
     fastfetch
     fzf
     git

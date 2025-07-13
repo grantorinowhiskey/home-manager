@@ -117,6 +117,7 @@
   		cat = "bat --paging=never";
   		ls = "eza";
       hm = "home-manager";
+      cd = "z";
   	};
   };
 
@@ -133,7 +134,15 @@
       colorscheme = "monokai";
       lsp.ignoreMessages = "LS message1 to ignore|LS message 2 to ignore|...";
       lsp.ignoreTriggerCharacters = "completion,signature";
-      lsp.server = "lsp, nil";
+      lsp = {
+      	autostart = true;
+      	server = {
+      		nix = {
+      			command = "nixd";
+      			args = [];
+      		};
+      	};
+      };
     };
   };
 
@@ -173,5 +182,9 @@
   	};
   };
 
+  programs.zoxide = {
+  	enable = true;
+  	enableFishIntegration = true;
+  };
 
 }

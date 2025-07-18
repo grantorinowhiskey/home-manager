@@ -45,7 +45,6 @@
     htop
     lazydocker
     lazygit
-    tealdeer
     nil
     wget
     yaml-language-server
@@ -166,6 +165,11 @@
   programs.starship = {
   	enable = true;
   	enableFishIntegration = true;
+  };
+
+  programs.tealdeer = {
+    enable = true;
+    enableAutoUpdates = true;
   };
 
   programs.yazi = {

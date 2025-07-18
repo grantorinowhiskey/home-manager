@@ -112,11 +112,13 @@
   	interactiveShellInit = ''
   		set fish_greeting
   	'';
+    shellAbbrs = {
+      hm = "home-manager";
+      };
   	shellAliases = {
   		man = "batman";
   		cat = "bat --paging=never";
   		ls = "eza";
-      hm = "home-manager";
       cd = "z";
   	};
   };

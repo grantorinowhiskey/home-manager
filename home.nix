@@ -88,6 +88,12 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
+  # atuin
+  programs.atuin = {
+    enable = true;
+    enableFishIntegration = true;
+  };
+
   # bat
   programs.bat = {
     enable = true;
@@ -175,6 +181,7 @@
   programs.yazi = {
     enable = true;
     enableFishIntegration = true;
+    shellWrapperName = "y";
   };
 
   programs.zellij = {

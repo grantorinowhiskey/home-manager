@@ -119,6 +119,7 @@
   	'';
     shellAbbrs = {
       hm = "home-manager";
+      zz = "zellij";
       };
   	shellAliases = {
   		man = "batman";

@@ -193,6 +193,7 @@
   		on_force_close = "detach";
   		copy_command = "wl-copy";
   		theme = "default";
+  		show_startup_tips = false;
   	};
   };
 

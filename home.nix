@@ -46,6 +46,7 @@
     lazydocker
     lazygit
     nil
+    ripgrep
     wget
     yaml-language-server
   ];

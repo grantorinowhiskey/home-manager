@@ -47,6 +47,7 @@
     lazydocker
     lazygit
     nil
+    nix-search-tv
     ripgrep
     wget
     yaml-language-server
@@ -84,7 +85,7 @@
   #  /etc/profiles/per-user/jt/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    EDITOR = "micro";
+    EDITOR = "hx";
   };
 
   # Let Home Manager install and manage itself.
@@ -128,6 +129,7 @@
   		cat = "bat --paging=never";
   		ls = "eza";
       cd = "z";
+      ns = "nix-search-tv print | fzf --preview 'nix-search-tv preview {}' --scheme history";
   	};
   };
 
@@ -193,7 +195,8 @@
   	settings = {
   		default_shell = "fish";
   		on_force_close = "detach";
-  		copy_command = "wl-copy";
+  		copy_command = "default";
+  		copy_on_select = false;
   		theme = "default";
   		show_startup_tips = false;
   	};

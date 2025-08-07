@@ -108,6 +108,9 @@
       batwatch
       prettybat
     ];
+    config = {
+      paging = "never";
+    };
   };
 
   programs.eza = {

@@ -126,7 +126,6 @@
       };
   	shellAliases = {
   		man = "batman";
-  		cat = "bat --paging=never";
   		ls = "eza";
       cd = "z";
       ns = "nix-search-tv print | fzf --preview 'nix-search-tv preview {}' --scheme history";
@@ -195,11 +194,11 @@
   	settings = {
   		default_shell = "fish";
   		on_force_close = "detach";
-  		copy_command = "default";
+  		# copy_command = "default";
   		copy_on_select = false;
   		theme = "default";
   		show_startup_tips = false;
-  	};
+  	}; 
   };
 
   programs.zoxide = {

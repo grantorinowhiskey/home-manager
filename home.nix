@@ -37,6 +37,7 @@
     alejandra
     aria2
     bottom
+    comma
     curl
     docker-compose-language-service
     fastfetch

@@ -128,7 +128,7 @@
       zz = "zellij";
       };
   	shellAliases = {
-  		man = "batman";
+  		man = "batman --paging always";
   		ls = "eza";
       cd = "z";
       ns = "nix-search-tv print | fzf --preview 'nix-search-tv preview {}' --scheme history";

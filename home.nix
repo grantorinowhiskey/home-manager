@@ -188,6 +188,11 @@
   programs.yazi = {
     enable = true;
     enableFishIntegration = true;
+    keymap = {
+      help.append_keymap = [
+        { run = "help"; on = [ "<§>"]; }
+      ];
+    };
     shellWrapperName = "y";
   };
 

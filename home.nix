@@ -46,6 +46,7 @@
     htop
     lazydocker
     lazygit
+    lolcat
     nil
     nix-search-tv
     ripgrep
@@ -132,6 +133,7 @@
   		ls = "eza";
       cd = "z";
       ns = "nix-search-tv print | fzf --preview 'nix-search-tv preview {}' --scheme history";
+      fastfetch = "fastfetch | lolcat";
   	};
   };
 

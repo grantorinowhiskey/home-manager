@@ -40,6 +40,8 @@
     comma
     curl
     docker-compose-language-service
+    duf
+    dust
     fastfetch
     fzf
     git

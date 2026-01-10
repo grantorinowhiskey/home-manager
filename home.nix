@@ -89,6 +89,7 @@
   #
   home.sessionVariables = {
     EDITOR = "hx";
+    TERMINAL = "ghostty";
   };
 
   # Let Home Manager install and manage itself.

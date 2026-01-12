@@ -197,7 +197,7 @@
         { run = "help"; on = [ "<§>"]; }
       ];
     };
-    shellWrapperName = "y";
+    shellWrapperName = "yy";
   };
 
   programs.zellij = {

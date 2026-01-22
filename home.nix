@@ -34,6 +34,7 @@
     # (pkgs.writeShellScriptBin "my-hello" ''
     #   echo "Hello, ${config.home.username}!"
     # '')
+    age
     alejandra
     aria2
     bottom
@@ -46,6 +47,7 @@
     fzf
     git
     htop
+    kryptor
     lazydocker
     lazygit
     lolcat

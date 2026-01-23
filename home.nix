@@ -55,6 +55,7 @@
     nix-search-tv
     ripgrep
     wget
+    wl-clipboard
     yaml-language-server
   ];
 

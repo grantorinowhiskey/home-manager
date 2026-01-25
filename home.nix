@@ -145,7 +145,7 @@
   programs.helix = {
   	enable = true;
     settings = {
-      theme = "adwaita-dark";
+      theme = "dankcolors";
     };
   };
 

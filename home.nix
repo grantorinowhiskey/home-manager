@@ -145,8 +145,17 @@
   programs.helix = {
   	enable = true;
     settings = {
-      theme = "dankcolors";
+      theme = "adwaita-dark";
+      editor.cursor-shape = {
+        normal = "bar";
+        insert = "bar";
+        select = "bar";
+      };
     };
+    languages.language = [{
+      name = "docker";
+      auto-format = true;
+    }];
   };
 
   programs.micro = {

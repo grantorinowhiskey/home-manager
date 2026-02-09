@@ -152,10 +152,6 @@
         select = "bar";
       };
     };
-    languages.language = [{
-      name = "docker";
-      auto-format = true;
-    }];
   };
 
   programs.micro = {

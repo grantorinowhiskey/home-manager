@@ -123,6 +123,7 @@
   programs.eza = {
     enable = true;
     enableFishIntegration = true;
+    icons = "auto";  
   };
 
   programs.fish = {

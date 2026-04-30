@@ -38,7 +38,7 @@
     alejandra
     aria2
     bottom
-    comma
+    # comma # enabled through nix-index
     curl
     docker-compose-language-service
     duf

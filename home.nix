@@ -146,7 +146,7 @@
   programs.helix = {
   	enable = true;
     settings = {
-      theme = "catppuccin_mocha";
+      # theme = "catppuccin_mocha";
       editor.cursor-shape = {
         normal = "bar";
         insert = "bar";
@@ -158,7 +158,7 @@
   programs.micro = {
     enable = true;
     settings = {
-      colorscheme = "monokai";
+      # colorscheme = "monokai";
       lsp.ignoreMessages = "LS message1 to ignore|LS message 2 to ignore|...";
       lsp.ignoreTriggerCharacters = "completion,signature";
       lsp = {
@@ -218,7 +218,7 @@
   		default_shell = "fish";
   		on_force_close = "detach";
   		copy_on_select = false;
-  		theme = "default";
+  		# theme = "default";
   		show_startup_tips = false;
   	}; 
   };

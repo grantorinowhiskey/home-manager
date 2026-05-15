@@ -228,4 +228,6 @@
   	enableFishIntegration = true;
   };
 
+  # Global catppuccin
+  catppuccin.enable = true;
 }

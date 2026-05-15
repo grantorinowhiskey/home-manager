@@ -146,7 +146,7 @@
   programs.helix = {
   	enable = true;
     settings = {
-      theme = "adwaita-dark";
+      theme = "catppuccin_mocha";
       editor.cursor-shape = {
         normal = "bar";
         insert = "bar";

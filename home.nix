@@ -228,6 +228,8 @@
   	enableFishIntegration = true;
   };
 
+  programs.fuzzel.enable = true;
+
   # Global catppuccin
   catppuccin.enable = true;
 }

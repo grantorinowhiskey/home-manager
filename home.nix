@@ -231,5 +231,8 @@
   programs.fuzzel.enable = true;
 
   # Global catppuccin
-  catppuccin.enable = true;
+  catppuccin = {
+    enable = true;
+    flavor = "frappe";
+  };
 }

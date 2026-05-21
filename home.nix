@@ -146,7 +146,6 @@
   programs.helix = {
   	enable = true;
     settings = {
-      # theme = "catppuccin_mocha";
       editor.cursor-shape = {
         normal = "bar";
         insert = "bar";
@@ -233,6 +232,6 @@
   # Global catppuccin
   catppuccin = {
     enable = true;
-    flavor = "frappe";
+    flavor = "macchiato";
   };
 }

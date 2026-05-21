@@ -43,7 +43,6 @@
     docker-compose-language-service
     duf
     dust
-    fastfetch
     fzf
     git
     htop
@@ -126,6 +125,10 @@
     icons = "auto";  
   };
 
+  programs.fastfetch = {
+    enable = true;
+  };
+
   programs.fish = {
   	enable = true;
   	interactiveShellInit = ''
@@ -147,9 +150,9 @@
   	enable = true;
     settings = {
       editor.cursor-shape = {
-        normal = "bar";
+        normal = "block";
         insert = "bar";
-        select = "bar";
+        select = "underline";
       };
     };
   };

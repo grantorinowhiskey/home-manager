@@ -230,11 +230,11 @@
   	enableFishIntegration = true;
   };
 
-  programs.fuzzel.enable = true;
+  # programs.fuzzel.enable = true;
 
-  # Global catppuccin
-  catppuccin = {
-    enable = true;
-    flavor = "macchiato";
-  };
+  # # Global catppuccin
+  # catppuccin = {
+  #   enable = true;
+  #   flavor = "macchiato";
+  # };
 }

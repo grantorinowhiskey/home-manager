@@ -146,18 +146,18 @@
   	};
   };
 
-  programs.ghostty = {
-    enable = true;
-    systemd.enable = true;
-    settings = {
-      # Font configuration
-      font-size = 14;
-      font-family = "Hack Nerd Font Mono";
-      # theme
-      # theme = "dankcolors";
+  # programs.ghostty = {
+  #   enable = true;
+  #   systemd.enable = true;
+  #   settings = {
+  #     # Font configuration
+  #     font-size = 14;
+  #     font-family = "Hack Nerd Font Mono";
+  #     # theme
+  #     # theme = "dankcolors";
       
-    };
-  };
+  #   };
+  # };
 
   programs.helix = {
   	enable = true;
@@ -167,6 +167,7 @@
         insert = "bar";
         select = "underline";
       };
+      theme = "adwaita-dark";
     };
   };
 

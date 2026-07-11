@@ -13,11 +13,10 @@
       url = "github:nix-community/nix-index-database";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    catppuccin.url = "github:catppuccin/nix";
   };
 
   outputs =
-    { nixpkgs, home-manager, nix-index-database, catppuccin, ... }:
+    { nixpkgs, home-manager, nix-index-database, ... }:
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
@@ -31,7 +30,6 @@
         modules = [
           ./home.nix
           nix-index-database.homeModules.default
-          catppuccin.homeModules.catppuccin
         ];
 
         # Optionally use extraSpecialArgs

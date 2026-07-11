@@ -92,7 +92,6 @@
   home.sessionVariables = {
     EDITOR = "hx";
     TERMINAL = "ghostty";
-    GTK_IM_MODULE = "simple"; # workaround for dead keys in ghostty
   };
 
   # Let Home Manager install and manage itself.

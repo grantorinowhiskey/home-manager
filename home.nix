@@ -146,6 +146,19 @@
   	};
   };
 
+  programs.ghostty = {
+    enable = true;
+    systemd.enable = true;
+    settings = {
+      # Font configuration
+      font-size = 14;
+
+      # theme
+      theme = "dankcolors";
+      
+    };
+  };
+
   programs.helix = {
   	enable = true;
     settings = {

@@ -152,9 +152,9 @@
     settings = {
       # Font configuration
       font-size = 14;
-
+      font-family = "Hack Nerd Font Mono";
       # theme
-      theme = "dankcolors";
+      # theme = "dankcolors";
       
     };
   };

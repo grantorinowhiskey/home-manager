@@ -99,6 +99,13 @@
     GTK_IM_MODULE = "simple"; # workaround for dead keys i ghostty
   };
 
+  xdg.terminal-exec = {
+    enable = true;
+    settings = {
+      default = [ "ghostty +new-window" ];
+    };
+  };
+
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;

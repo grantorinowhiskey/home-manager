@@ -43,10 +43,10 @@
     docker-compose-language-service
     duf
     dust
+    file
     fzf
     git
     htop
-    kryptor
     lazydocker
     lazygit
     lolcat

@@ -92,11 +92,11 @@
   home.sessionVariables = {
     EDITOR = "hx";
     TERMINAL = "ghostty";
-    GTK_IM_MODULE = "simple"; # workaruound for dead keys i ghostty
+    GTK_IM_MODULE = "simple"; # workaround for dead keys i ghostty
   };
 
   systemd.user.sessionVariables = {
-    GTK_IM_MODULE = "simple"; # workaruound for dead keys i ghostty
+    GTK_IM_MODULE = "simple"; # workaround for dead keys i ghostty
   };
 
 

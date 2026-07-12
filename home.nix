@@ -92,7 +92,13 @@
   home.sessionVariables = {
     EDITOR = "hx";
     TERMINAL = "ghostty";
+    GTK_IM_MODULE = "simple"; # workaruound for dead keys i ghostty
   };
+
+  systemd.user.sessionVariables = {
+    GTK_IM_MODULE = "simple"; # workaruound for dead keys i ghostty
+  };
+
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;

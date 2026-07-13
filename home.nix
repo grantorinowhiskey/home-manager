@@ -75,6 +75,12 @@
     };
   };
 
+  # garbage collection for home-manager
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 30d";
+  };
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;

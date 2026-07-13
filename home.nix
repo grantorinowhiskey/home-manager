@@ -46,6 +46,7 @@
     file
     fzf
     git
+    gocryptfs
     htop
     lazydocker
     lazygit

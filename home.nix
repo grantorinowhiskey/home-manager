@@ -221,6 +221,7 @@
   	settings = {
   		default_shell = "fish";
   		on_force_close = "detach";
+  		copy_command = "wl-copy";
   		copy_on_select = false;
   		# theme = "default";
   		show_startup_tips = false;

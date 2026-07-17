@@ -21,6 +21,7 @@
     age
     alejandra
     aria2
+    bash-language-server
     bottom
     # comma # enabled through nix-index
     curl

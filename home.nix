@@ -59,6 +59,10 @@
     # '';
   };
 
+  home.sessionPath = [
+    "$HOME/scripts"
+  ];
+
   home.sessionVariables = {
     EDITOR = "hx";
     TERMINAL = "ghostty";

@@ -112,6 +112,10 @@
     };
   };
 
+  programs.codex = {
+    enable = true;
+  };
+
   programs.eza = {
     enable = true;
     enableFishIntegration = true;

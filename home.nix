@@ -220,6 +220,7 @@
 
   programs.yazi = {
     enable = true;
+    enableBashIntegration = true;
     enableFishIntegration = true;
     keymap = {
       help.append_keymap = [

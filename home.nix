@@ -168,6 +168,10 @@
     };
   };
 
+  programs.herdr = {
+    enable = true;
+  };
+
   programs.micro = {
     enable = true;
     settings = {

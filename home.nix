@@ -38,6 +38,7 @@
     lolcat
     nil
     nix-search-tv
+    p7zip-rar
     ripgrep
     wget
     wl-clipboard

@@ -15,6 +15,8 @@
   # release notes.
   home.stateVersion = "25.05"; # Please read the comment before changing.
 
+  nixpkgs.config.allowUnfree = true;
+  
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
@@ -38,7 +40,7 @@
     lolcat
     nil
     nix-search-tv
-    p7zip-rar
+    p7zip
     ripgrep
     wget
     wl-clipboard

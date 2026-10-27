@@ -160,6 +160,13 @@
     # };
   };
 
+  # Ghostty 1.3.1 declares Type=notify-reload, but does not install its
+  # SIGUSR2 handler early enough for systemd's startup validation.
+  xdg.configFile."systemd/user/app-com.mitchellh.ghostty.service.d/notify-workaround.conf".text = ''
+    [Service]
+    Type=notify
+  '';
+
   programs.helix = {
   	enable = true;
     settings = {

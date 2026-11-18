@@ -238,6 +238,29 @@
     enableBashIntegration = true;
     enableFishIntegration = true;
     shellWrapperName = "yy";
+    plugins.ouch = pkgs.yaziPlugins.ouch;
+    settings = {
+      plugin.prepend_previewers = [
+        {
+          mime = "application/{*zip,tar,bzip2,7z*,rar,xz,zstd,java-archive}";
+          run = "ouch";
+        }
+      ];
+      opener.extract = [
+        {
+          run = "ouch d -y %s";
+          desc = "Extract here with ouch";
+          for = "unix";
+        }
+      ];
+    };
+    keymap.mgr.prepend_keymap = [
+      {
+        on = [ "C" ];
+        run = "plugin ouch";
+        desc = "Compress with ouch";
+      }
+    ];
   };
 
   programs.zellij = {

@@ -237,18 +237,6 @@
     enable = true;
     enableBashIntegration = true;
     enableFishIntegration = true;
-    keymap = {
-      mgr.prepend_keymap = [
-        {
-          on = [ "E" ];
-          run = ''shell --block -- bash -c 'read -e -r -i "$PWD/" -p "Extrahera till: " destination || exit 0; mkdir -p -- "$destination" && ouch decompress "$@" --dir "$destination"' _ %s'';
-          desc = "Extrahera arkiv till vald katalog";
-        }
-      ];
-      help.append_keymap = [
-        { run = "help"; on = [ "<§>"]; }
-      ];
-    };
     shellWrapperName = "yy";
   };
 

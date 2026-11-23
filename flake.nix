@@ -15,25 +15,48 @@
     };
   };
 
-  outputs =
-    { nixpkgs, home-manager, nix-index-database, ... }:
-    let
-      system = "x86_64-linux";
-      pkgs = nixpkgs.legacyPackages.${system};
-    in
-    {
-      homeConfigurations."jt" = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
-
-        # Specify your home configuration modules here, for example,
-        # the path to your home.nix.
+  outputs = {
+    nixpkgs,
+    home-manager,
+    nix-index-database,
+    ...
+  }: let
+    mkHome = {
+      user,
+      host,
+      system ? "x86_64-linux",
+    }:
+      home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.${system};
         modules = [
-          ./home.nix
+          ./modules/common.nix
+          ./users/${user}.nix
+          ./hosts/${host}.nix
           nix-index-database.homeModules.default
         ];
-
-        # Optionally use extraSpecialArgs
-        # to pass through arguments to home.nix
+      };
+  in {
+    homeConfigurations = {
+      "jt@nix-t14" = mkHome {
+        user = "jt";
+        host = "nix-t14";
+      };
+      "deck@steamdeck" = mkHome {
+        user = "deck";
+        host = "steamdeck";
+      };
+      "deck@gabecube" = mkHome {
+        user = "deck";
+        host = "gabecube";
+      };
+      "jt@nix-n3" = mkHome {
+        user = "jt";
+        host = "nix-n3";
+      };
+      "jt@debian-hetzner" = mkHome {
+        user = "jt";
+        host = "debian-hetzner";
       };
     };
+  };
 }

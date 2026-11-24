@@ -32,6 +32,7 @@
     lazygit
     lolcat
     nil
+    nh
     nix-search-tv
     ouch
     p7zip
